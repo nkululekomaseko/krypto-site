@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #01073d;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVBAR */
+
+header {
+  position: relative;
+}
+
+.logo-wrap {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.logo {
+  font-size: 2.25rem;
+  color: white;
+  font-family: "Outfit", "sans-serif";
+  font-weight: bold;
+}
+
+.logo:hover {
+  color: #b4dbdb;
+}
+
+.nav-ul {
+  position: fixed;
+  top: 0;
+  left: -100%;
+
+  background-color: #24225a;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nav-a {
+  color: white;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1em;
+  z-index: 4;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
